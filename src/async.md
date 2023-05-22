@@ -22,7 +22,7 @@ These two functions take a long time, and they are unrelated as `long_running_pr
 In other languages, refactoring both of those long running processes to async can be tedious. Let us go through converting this to be asynchronous and we can explain what is happening within the `tslang` runtime.
 
 ```ts
-const long_running_process = () Data {
+pub fn long_running_process() Data {
   // lots of work.
   return data;
 }
@@ -30,12 +30,12 @@ const long_running_process = () Data {
 
 and the conversion,
 ```ts
-const long_running_process = () frame Data {
+pub fn long_running_process() frame Data {
   // lots of work.
   return data;
 }
 
-const long_running_process2 = () frame Data {
+pub fn long_running_process2() frame Data {
   // lots of work.
   return data;
 }
