@@ -1,0 +1,6 @@
+[book]
+authors = ["Chris"]
+language = "en"
+multilingual = false
+src = "src"
+title = "TypeLang Documentation"
