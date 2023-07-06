@@ -1,6 +1,6 @@
 # Functions
 
-In `type-lang` declarations are simple.
+In `type-lang` all declarations are simple.
 
 ```
 pub const value: u64 = 5;
@@ -30,13 +30,13 @@ pub const add = fn (one: i64, two: i64) i64 {
 } 
 ```
 
-This declaration syntax allows lambdas to be exactly the same
+This declaration syntax allows closures to be defined exactly the same
 
 ```ts
 let my_array = [1, 2, 3];
-my_array = my_array.map(fn (x) u64 
-  { return x + 2; }
-);
+my_array = my_array.map(fn (x) u64 { 
+  return x + 2; 
+});
 ```
 
 
